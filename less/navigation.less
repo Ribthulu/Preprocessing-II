@@ -1,1 +1,48 @@
+// escape variable
+@mobie: ~"( max-width: 500px )";
+
 // Navigation Styles here
+.nav-container{
+  .website-width()
+}
+
+.nav-row {
+  display: flex;
+  margin: 30px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.nav-column {
+  width: 50%;
+  border-bottom: 2px dashed @navigation-border;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+
+    @media @mobile {
+    width: 100%;
+    background-color: green;
+    }
+  }
+
+
+.nav-column2{
+  padding: 0 10px;
+  justify-content: space-evenly;
+}
+
+.nav-column .nav-title{
+  text-decoration: none;
+  color: black;
+  font-family: 'Indie Flower', cursive;
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+
+.nav-column2 a{
+  text-decoration: none;
+  color: black;
+  font-size: 1.6rem;
+}

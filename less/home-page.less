@@ -1,13 +1,24 @@
 .home {
 
+  .beginning-content-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .beginning-text-section{
+    display:block;
+    margin: 30px 0;
+    padding-bottom: 30px;
+    border-bottom: 2px dashed @navigation-border;
+  }
+
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -56,6 +67,10 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      .btn{
+        .btnMixin(white, teal);
+      }
     }
   }
 }// home
